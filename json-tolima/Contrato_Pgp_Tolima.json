@@ -1,0 +1,501 @@
+{
+  "PGP_TOLIMA": {
+    "IPS_PRIMARIA": {
+      "SUBSIDIADO - E.S.E. HOSPITAL SAN ISIDRO DE ALPUJARRA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "ALPUJARRA",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "024",
+            "CODIGO_DANE": "73024"
+          }
+        ]
+      },
+      "SUBSIDIADO-HOSPITAL \"SAN ROQUE\" E.S.E. ALVARADO TOLIMA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "ALVARADO",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "026",
+            "CODIGO_DANE": "73026"
+          }
+        ]
+      },
+      "SUBSIDIADO - HOSPITAL SAN ANTONIO DE AMBALEMA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "AMBALEMA",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "030",
+            "CODIGO_DANE": "73030"
+          }
+        ]
+      },
+      "SUBSIDIADO-HOSPITAL SAN JUAN DE DIOS - ESE- ANZOATEGUI": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "ANZOATEGUI",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "043",
+            "CODIGO_DANE": "73043"
+          }
+        ]
+      },
+      "SUBSIDIADO-E.S.E. HOSPITAL NELSON RESTREPO MARTINEZ DE ARMERO GUAYABAL": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "ARMERO",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "055",
+            "CODIGO_DANE": "73055"
+          }
+        ]
+      },
+      "SUBSIDIADO-HOSPITAL NUESTRA SEÑORA DE LOURDES": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "ATACO",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "067",
+            "CODIGO_DANE": "73067"
+          }
+        ]
+      },
+      "SUBSIDIADO - HOSPITAL SANTA LUCIA - CAJAMARCA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "CAJAMARCA",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "124",
+            "CODIGO_DANE": "73124"
+          }
+        ]
+      },
+      "SUBSIDIADO-HOSPITAL NUESTRA SEÑORA DEL CARMEN E.S.E. - CARMEN DE APICALA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "CARMEN DE APICALA",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "148",
+            "CODIGO_DANE": "73148"
+          }
+        ]
+      },
+      "SUBSIDIADO-HOSPITAL SANTO DOMINGO E.S.E.": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "CASABIANCA",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "152",
+            "CODIGO_DANE": "73152"
+          }
+        ]
+      },
+      "SUBSIDIADO-E.S.E. HOSPITAL SAN JUAN BAUTISTA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "CHAPARRAL",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "168",
+            "CODIGO_DANE": "73168"
+          }
+        ]
+      },
+      "SUBSIDIADO - CENTRO DE SALUD COELLO E.S.E.": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "COELLO",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "200",
+            "CODIGO_DANE": "73200"
+          }
+        ]
+      },
+      "SUBSIDIADO - HOSPITAL SAN ROQUE EMPRESA SOCIAL DEL ESTADO NIVEL I": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "COYAIMA",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "217",
+            "CODIGO_DANE": "73217"
+          }
+        ]
+      },
+      "SUBSIDIADO - HOSPITAL FEDERICO ARBELAEZ EMPRESA SOCIAL DEL ESTADO": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "CUNDAY",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "226",
+            "CODIGO_DANE": "73226"
+          }
+        ]
+      },
+      "SUBSIDIADO - HOSPITAL SAN RAFAEL EMPRESA SOCIAL DEL ESTADO": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "DOLORES",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "236",
+            "CODIGO_DANE": "73236"
+          }
+        ]
+      },
+      "SUBSIDIADO-E.S.E. HOSPITAL SAN RAFAEL DEL ESPINAL": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "ESPINAL",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "268",
+            "CODIGO_DANE": "73268"
+          }
+        ]
+      },
+      "SUBSIDIADO-ESE HOSPITAL SANTA ANA NIVEL I DEL MUNICIPIO DE FALAN": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "FALAN",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "270",
+            "CODIGO_DANE": "73270"
+          }
+        ]
+      },
+      "SUBSIDIADO-HOSPITAL SAN VICENTE DE PAUL FRESNO": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "FRESNO",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "283",
+            "CODIGO_DANE": "73283"
+          }
+        ]
+      },
+      "SUBSIDIADO-E.S.E. HOSPITAL SAN ANTONIO DEL GUAMO": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "GUAMO",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "319",
+            "CODIGO_DANE": "73319"
+          }
+        ]
+      },
+      "SUBSIDIADO-E.S.E. HOSPITAL SAN ANTONIO DE HERVEO": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "HERVEO",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "347",
+            "CODIGO_DANE": "73347"
+          }
+        ]
+      },
+      "SUBSIDIADO-HOSPITAL SAN JUAN DE DIOS HONDA EMPRESA SOCIAL DEL ESTADO": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "HONDA",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "349",
+            "CODIGO_DANE": "73349"
+          }
+        ]
+      },
+      "SUBSIDIADO-UNIDAD DE SALUD DE IBAGUE EMPRESA SOCIAL DEL ESTADO": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "IBAGUE",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "001",
+            "CODIGO_DANE": "73001"
+          }
+        ]
+      },
+      "SUBSIDIADO - HOSPITAL SUMAPAZ E.S.E.": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "ICONONZO",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "352",
+            "CODIGO_DANE": "73352"
+          }
+        ]
+      },
+      "SUBSIDIADO-HOSPITAL REINA SOFIA DE ESPAÑA DE LERIDA TOLIMA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "LERIDA",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "408",
+            "CODIGO_DANE": "73408"
+          }
+        ]
+      },
+      "SUBSIDIADO-HOSPITAL REGIONAL ALFONSO JARAMILLO SALAZAR E.S.E. - LIBANO-TOLIMA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "LIBANO",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "411",
+            "CODIGO_DANE": "73411"
+          }
+        ]
+      },
+      "SUBSIDIADO-ESE-HOSPITAL SAN JOSE DE MARIQUITA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "MARIQUITA",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "443",
+            "CODIGO_DANE": "73443"
+          }
+        ]
+      },
+      "SUBSIDIADO-HOSPITAL RAMON MARIA ARANA ESE": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "MURILLO",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "461",
+            "CODIGO_DANE": "73461"
+          }
+        ]
+      },
+      "SUBSIDIADO-HOSPITAL SAN ANTONIO E.S.E. DE NATAGAIMA TOLIMA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "NATAGAIMA",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "483",
+            "CODIGO_DANE": "73483"
+          }
+        ]
+      },
+      "SUBSIDIADO-HOSPITAL SAN JOSE DE ORTEGA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "ORTEGA",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "504",
+            "CODIGO_DANE": "73504"
+          }
+        ]
+      },
+      "SUBSIDIADO-HOSPITAL RICARDO ACOSTA NIVEL I ESE": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "PALOCABILDO",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "520",
+            "CODIGO_DANE": "73520"
+          }
+        ]
+      },
+      "SUBSIDIADO-HOSPITAL SAN SEBASTIAN DE PIEDRAS TOLIMA E.S.E.": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "PIEDRAS",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "547",
+            "CODIGO_DANE": "73547"
+          }
+        ]
+      },
+      "SUBSIDIADO-HOSPITAL CENTRO NIVEL I PLANADAS": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "PLANADAS",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "555",
+            "CODIGO_DANE": "73555"
+          }
+        ]
+      },
+      "SUBSIDIADO - HOSPITAL SAN VICENTE DE PAUL": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "PRADO",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "563",
+            "CODIGO_DANE": "73563"
+          }
+        ]
+      },
+      "SUBSIDIADO-NUEVO HOSPITAL LA CANDELARIA E.S.E.": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "PURIFICACION",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "585",
+            "CODIGO_DANE": "73585"
+          }
+        ]
+      },
+      "SUBSIDIADO-HOSPITAL MARIA INMACULADA E.S.E.": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "RIOBLANCO",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "616",
+            "CODIGO_DANE": "73616"
+          }
+        ]
+      },
+      "SUBSIDIADO-HOSPITAL SANTA LUCIA EMPRESA SOCIAL DEL ESTADO - RONCESVALLES": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "RONCESVALLES",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "622",
+            "CODIGO_DANE": "73622"
+          }
+        ]
+      },
+      "SUBSIDIADO - HOSPITAL SAN VICENTE - ROVIRA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "ROVIRA",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "624",
+            "CODIGO_DANE": "73624"
+          }
+        ]
+      },
+      "SUBSIDIADO - HOSPITAL SAN CARLOS ESE SALDAÑA TOLIMA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "SALDAÑA",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "671",
+            "CODIGO_DANE": "73671"
+          }
+        ]
+      },
+      "SUBSIDIADO-HOSPITAL LA MISERICORDIA E.S.E. - SAN ANTONIO-TOLIMA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "SAN ANTONIO",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "675",
+            "CODIGO_DANE": "73675"
+          }
+        ]
+      },
+      "SUBSIDIADO-HOSPITAL SERAFIN MONTAÑA CUELLAR ESE": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "SAN LUIS",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "678",
+            "CODIGO_DANE": "73678"
+          }
+        ]
+      },
+      "SUBSIDIADO - HOSPITAL CARLOS TORRENTE LLANO": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "SANTA ISABEL",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "686",
+            "CODIGO_DANE": "73686"
+          }
+        ]
+      },
+      "SUBSIDIADO-HOSPITAL SANTA ROSA DE LIMA- ESE": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "SUAREZ",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "770",
+            "CODIGO_DANE": "73770"
+          }
+        ]
+      },
+      "SUBSIDIADO - HOSPITAL LOCAL VITO FASAEL GUTIERREZ PEDRAZA E.S.E": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "VALLE DE SAN JUAN",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "854",
+            "CODIGO_DANE": "73854"
+          }
+        ]
+      },
+      "SUBSIDIADO-HOSPITAL SANTA BARBARA E.S.E. DE VENADILLO": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "VENADILLO",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "861",
+            "CODIGO_DANE": "73861"
+          }
+        ]
+      },
+      "SUBSIDIADO-E.S.E. HOSPITAL ISMAEL PERDOMO": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "VILLAHERMOSA",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "870",
+            "CODIGO_DANE": "73870"
+          }
+        ]
+      },
+      "SUBSIDIADO-HOSPITAL LA MILAGROSA EMPRESA SOCIAL DEL ESTADO": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "VILLARRICA",
+            "DEPARTAMENTO": "TOLIMA",
+            "ID_DEPARTAMENTO": "73",
+            "ID_MUNICIPIO": "873",
+            "CODIGO_DANE": "73873"
+          }
+        ]
+      }
+    }
+  }
+}

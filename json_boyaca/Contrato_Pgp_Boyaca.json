@@ -1,0 +1,906 @@
+{
+  "PGP_BOYACA": {
+    "IPS_PRIMARIA": {
+      "CENTRO DE SALUD DE ALMEIDA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "ALMEIDA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "022",
+            "CODIGO_DANE": "15022"
+          }
+        ]
+      },
+      "E.S.E. CENTRO DE SALUD NUESTRA SEÑORA DE BELEN - BOYACA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "BELEN",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "087",
+            "CODIGO_DANE": "15087"
+          }
+        ]
+      },
+      "CENTRO DE SALUD DE BOAVITA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "BOAVITA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "097",
+            "CODIGO_DANE": "15097"
+          }
+        ]
+      },
+      "EMPRESA SOCIAL DEL ESTADO CENTRO DE SALUD BRICEÑO": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "BRICEÑO",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "106",
+            "CODIGO_DANE": "15106"
+          }
+        ]
+      },
+      "EMPRESA SOCIAL DEL ESTADO CENTRO DE SALUD LAS MERCEDES CALDAS": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "CALDAS",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "131",
+            "CODIGO_DANE": "15131"
+          }
+        ]
+      },
+      "E.S.E. CENTRO DE SALUD CAMPOHERMOSO": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "CAMPOHERMOSO",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "135",
+            "CODIGO_DANE": "15135"
+          }
+        ]
+      },
+      "CENTRO DE SALUD DE CHINAVITA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "CHINAVITA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "172",
+            "CODIGO_DANE": "15172"
+          }
+        ]
+      },
+      "EMPRESA SOCIAL DEL ESTADO CENTRO DE SALUD SANTA ISABEL BUENAVISTA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "BUENAVISTA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "109",
+            "CODIGO_DANE": "15109"
+          }
+        ]
+      },
+      "E.S.E. CENTRO DE SALUD SANTO ECCEHOMO SUTAMARCHAN": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "SUTAMARCHAN",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "776",
+            "CODIGO_DANE": "15776"
+          }
+        ]
+      },
+      "ESE CENTRO DE SALUD SANTA BARBARA DE TUNUNGUA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "TUNUNGUA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "832",
+            "CODIGO_DANE": "15832"
+          }
+        ]
+      },
+      "CENTRO MEDICO COLSUBSIDIO CHIQUINQUIRA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "TINJACA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "808",
+            "CODIGO_DANE": "15808"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "SABOYA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "632",
+            "CODIGO_DANE": "15632"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "MARIPI",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "442",
+            "CODIGO_DANE": "15442"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "LA VICTORIA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "401",
+            "CODIGO_DANE": "15401"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "CHIQUINQUIRA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "176",
+            "CODIGO_DANE": "15176"
+          }
+        ]
+      },
+      "CENTRO DE SALUD DE CHISCAS": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "CHISCAS",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "180",
+            "CODIGO_DANE": "15180"
+          }
+        ]
+      },
+      "CENTRO DE SALUD DE CHITA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "CHITA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "183",
+            "CODIGO_DANE": "15183"
+          }
+        ]
+      },
+      "ESE CENTRO DE SALUD DE CHITARAQUE": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "CHITARAQUE",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "185",
+            "CODIGO_DANE": "15185"
+          }
+        ]
+      },
+      "CENTRO DE SALUD DE CHIVOR": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "CHIVOR",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "236",
+            "CODIGO_DANE": "15236"
+          }
+        ]
+      },
+      "EMPRESA SOCIAL DEL ESTADO PUESTO DE SALUD DE CIENEGA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "CIENEGA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "189",
+            "CODIGO_DANE": "15189"
+          }
+        ]
+      },
+      "E.S.E. CENTRO DE SALUD LUIS LANCHEROS": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "COPER",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "212",
+            "CODIGO_DANE": "15212"
+          }
+        ]
+      },
+      "CENTRO DE SALUD DE COVARACHIA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "COVARACHIA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "218",
+            "CODIGO_DANE": "15218"
+          }
+        ]
+      },
+      "SERVICIOS MEDICOS FAMEDIC S.A.S-DUITAMA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "DUITAMA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "238",
+            "CODIGO_DANE": "15238"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "CERINZA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "162",
+            "CODIGO_DANE": "15162"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "TUTAZA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "839",
+            "CODIGO_DANE": "15839"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "SANTA ROSA DE VITERBO",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "693",
+            "CODIGO_DANE": "15693"
+          }
+        ]
+      },
+      "E.S.E. HOSPITAL SAN JOSE DEL COCUY": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "EL COCUY",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "244",
+            "CODIGO_DANE": "15244"
+          }
+        ]
+      },
+      "CENTRO DE SALUD DEL ESPINO": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "EL ESPINO",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "248",
+            "CODIGO_DANE": "15248"
+          }
+        ]
+      },
+      "ESE CENTRO DE SALUD DE FLORESTA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "FLORESTA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "276",
+            "CODIGO_DANE": "15276"
+          }
+        ]
+      },
+      "E.S.E. CENTRO DE SALUD SAN ANTONIO DE PADUA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "GACHANTIVA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "293",
+            "CODIGO_DANE": "15293"
+          }
+        ]
+      },
+      "HOSPITAL DE GARAGOA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "GARAGOA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "299",
+            "CODIGO_DANE": "15299"
+          }
+        ]
+      },
+      "PUESTO DE SALUD DE GUACAMAYAS": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "GUACAMAYAS",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "317",
+            "CODIGO_DANE": "15317"
+          }
+        ]
+      },
+      "HOSPITAL REGIONAL II NIVEL DE ATENCION VALLE DE TENZA E.S.E. - HOSPITAL DE GUATEQUE": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "GUATEQUE",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "322",
+            "CODIGO_DANE": "15322"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "SOMONDOCO",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "761",
+            "CODIGO_DANE": "15761"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "MACANAL",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "425",
+            "CODIGO_DANE": "15425"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "LA CAPILLA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "380",
+            "CODIGO_DANE": "15380"
+          }
+        ]
+      },
+      "CENTRO DE SALUD DE GUAYATA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "GUAYATA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "325",
+            "CODIGO_DANE": "15325"
+          }
+        ]
+      },
+      "E.S.E. HOSPITAL ANDRES GIRARDOT GUICAN": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "GUICAN",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "332",
+            "CODIGO_DANE": "15332"
+          }
+        ]
+      },
+      "EMPRESA SOCIAL DEL ESTADO CENTRO DE SALUD JENESANO": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "JENESANO",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "367",
+            "CODIGO_DANE": "15367"
+          }
+        ]
+      },
+      "EMPRESA SOCIAL DEL ESTADO CENTRO DE SALUD NUESTRA SEÑORA DE LA NATIVIDAD": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "JERICO",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "368",
+            "CODIGO_DANE": "15368"
+          }
+        ]
+      },
+      "E.S.E. CENTRO DE SALUD LA UVITA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "LA UVITA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "403",
+            "CODIGO_DANE": "15403"
+          }
+        ]
+      },
+      "E.S.E. HOSPITAL REGIONAL DE MIRAFLORES": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "MIRAFLORES",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "455",
+            "CODIGO_DANE": "15455"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "ZETAQUIRA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "897",
+            "CODIGO_DANE": "15897"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "BERBEO",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "090",
+            "CODIGO_DANE": "15090"
+          }
+        ]
+      },
+      "HOSPITAL REGIONAL DE MONIQUIRA ESE": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "MONIQUIRA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "469",
+            "CODIGO_DANE": "15469"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "SAN JOSE DE PARE",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "664",
+            "CODIGO_DANE": "15664"
+          }
+        ]
+      },
+      "E.S.E. HOSPITAL SANTA ANA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "MUZO",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "480",
+            "CODIGO_DANE": "15480"
+          }
+        ]
+      },
+      "EMPRESA SOCIAL DEL ESTADO CENTRO DE SALUD MANUEL ELKIN PATARROYO": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "OTANCHE",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "507",
+            "CODIGO_DANE": "15507"
+          }
+        ]
+      },
+      "EMPRESA SOCIAL DEL ESTADO CENTRO DE SALUD \"NUESTRA SEÑORA DE GUADALUPE\"": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "PACHAVITA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "511",
+            "CODIGO_DANE": "15511"
+          }
+        ]
+      },
+      "E.S.E. CENTRO DE SALUD JORGE GONZALEZ OLMOS": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "PAEZ",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "514",
+            "CODIGO_DANE": "15514"
+          }
+        ]
+      },
+      "SERVICIOS INTEGRALES DE REHABILITACION EN BOYACA LIMITADA- SIREB LTDA SEDE PAIPA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "PAIPA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "516",
+            "CODIGO_DANE": "15516"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "SOTAQUIRA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "763",
+            "CODIGO_DANE": "15763"
+          }
+        ]
+      },
+      "PUESTO DE SALUD DE PANQUEBA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "PANQUEBA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "522",
+            "CODIGO_DANE": "15522"
+          }
+        ]
+      },
+      "EMPRESA SOCIAL DEL ESTADO CENTRO DE SALUD EDGAR ALONSO PULIDO SOLANO": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "PAUNA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "531",
+            "CODIGO_DANE": "15531"
+          }
+        ]
+      },
+      "E.S.E. SALUD PAZ DE RIO": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "PAZ DE RIO",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "537",
+            "CODIGO_DANE": "15537"
+          }
+        ]
+      },
+      "SERVICIOS MEDICOS FAMEDIC SAS-FAMEDIC IPS PUERTO BOYACA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "PUERTO BOYACA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "572",
+            "CODIGO_DANE": "15572"
+          }
+        ]
+      },
+      "E.S.E. CENTRO DE SALUD NUESTRA SEÑORA DE LA PAZ - QUIPAMA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "QUIPAMA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "580",
+            "CODIGO_DANE": "15580"
+          }
+        ]
+      },
+      "E.S.E. HOSPITAL SAN VICENTE DE RAMIRIQUI": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "RAMIRIQUI",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "599",
+            "CODIGO_DANE": "15599"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "VIRACACHA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "879",
+            "CODIGO_DANE": "15879"
+          }
+        ]
+      },
+      "EMPRESA SOCIAL DEL ESTADO CENTRO DE SALUD SAN RAFAEL": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "RONDON",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "621",
+            "CODIGO_DANE": "15621"
+          }
+        ]
+      },
+      "ESE CENTRO DE SALUD SAN ANTONIO DE LA PARED DE RAQUIRA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "RAQUIRA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "600",
+            "CODIGO_DANE": "15600"
+          }
+        ]
+      },
+      "EMPRESA SOCIAL DEL ESTADO HOSPITAL SANTA MARTA DE SAMACA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "SAMACA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "646",
+            "CODIGO_DANE": "15646"
+          }
+        ]
+      },
+      "E.S.E. CENTRO DE SALUD JAIME DIAZ PEREZ": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "SAN EDUARDO",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "660",
+            "CODIGO_DANE": "15660"
+          }
+        ]
+      },
+      "ESE HOSPITAL SAN FRANCISCO-SAN LUIS DE GACENO": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "SAN LUIS DE GACENO",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "667",
+            "CODIGO_DANE": "15667"
+          }
+        ]
+      },
+      "CENTRO DE SALUD DE SAN MATEO": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "SAN MATEO",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "673",
+            "CODIGO_DANE": "15673"
+          }
+        ]
+      },
+      "E.S.E. CENTRO DE SALUD SAN MIGUEL": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "SAN MIGUEL DE SEMA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "676",
+            "CODIGO_DANE": "15676"
+          }
+        ]
+      },
+      "E.S.E. CENTRO DE SALUD SAN PABLO DE BORBUR": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "SAN PABLO DE BORBUR",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "681",
+            "CODIGO_DANE": "15681"
+          }
+        ]
+      },
+      "ESE HOSPITAL SAN FRANCISCO-CENTRO DE SALUD DE SANTA MARIA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "SANTA MARIA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "690",
+            "CODIGO_DANE": "15690"
+          }
+        ]
+      },
+      "EMPRESA SOCIAL DEL ESTADO CENTRO DE SALUD SANTANA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "SANTANA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "686",
+            "CODIGO_DANE": "15686"
+          }
+        ]
+      },
+      "CENTRO DE SALUD DE SATIVANORTE": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "SATIVANORTE",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "720",
+            "CODIGO_DANE": "15720"
+          }
+        ]
+      },
+      "E.S.E. HOSPITAL REGIONAL DE DUITAMA-SATIVASUR": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "SATIVASUR",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "723",
+            "CODIGO_DANE": "15723"
+          }
+        ]
+      },
+      "E.S.E. HOSPITAL SAN ANTONIO DE SOATA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "SOATA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "753",
+            "CODIGO_DANE": "15753"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "SUSACON",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "774",
+            "CODIGO_DANE": "15774"
+          }
+        ]
+      },
+      "E.S.E. HOSPITAL SAGRADO CORAZON DE JESUS DE SOCHA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "SOCHA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "757",
+            "CODIGO_DANE": "15757"
+          }
+        ]
+      },
+      "E.S.E. CENTRO DE SALUD SAN ANTONIO - SOCOTA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "SOCOTA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "755",
+            "CODIGO_DANE": "15755"
+          }
+        ]
+      },
+      "CENTRO DE SALUD DE SUTATENZA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "SUTATENZA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "778",
+            "CODIGO_DANE": "15778"
+          }
+        ]
+      },
+      "CENTRO DE SALUD DE TENZA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "TENZA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "798",
+            "CODIGO_DANE": "15798"
+          }
+        ]
+      },
+      "EMPRESA SOCIAL DEL ESTADO CENTRO DE SALUD SANTA RITA DE CASIA TIPACOQUE": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "TIPACOQUE",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "810",
+            "CODIGO_DANE": "15810"
+          }
+        ]
+      },
+      "EMPRESA SOCIAL DEL ESTADO CENTRO DE SALUD TOCA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "TOCA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "814",
+            "CODIGO_DANE": "15814"
+          }
+        ]
+      },
+      "EMPRESA SOCIAL DEL ESTADO CENTRO DE SALUD DE TOGUI": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "TOGUI",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "816",
+            "CODIGO_DANE": "15816"
+          }
+        ]
+      },
+      "EMPRESA SOCIAL DEL ESTADO HOSPITAL BAUDILIO ACERO": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "TURMEQUE",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "835",
+            "CODIGO_DANE": "15835"
+          }
+        ]
+      },
+      "EMPRESA SOCIAL DEL ESTADO PUESTO DE SALUD SAN MIGUEL DE TUTA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "TUTA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "837",
+            "CODIGO_DANE": "15837"
+          }
+        ]
+      },
+      "ESE CENTRO DE SALUD SAN RAFAEL- UMBITA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "UMBITA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "842",
+            "CODIGO_DANE": "15842"
+          }
+        ]
+      },
+      "E.S.E. CENTRO DE SALUD DE VENTAQUEMADA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "VENTAQUEMADA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "861",
+            "CODIGO_DANE": "15861"
+          }
+        ]
+      },
+      "ESE HOSPITAL SAN FRANCISCO DE VILLA DE LEYVA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "SACHICA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "638",
+            "CODIGO_DANE": "15638"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "SANTA SOFIA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "696",
+            "CODIGO_DANE": "15696"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "VILLA DE LEYVA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "407",
+            "CODIGO_DANE": "15407"
+          }
+        ]
+      },
+      "HOSPITAL ESPECIAL DE CUBARA EMPRESA SOCIAL DEL ESTADO": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "CUBARA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "223",
+            "CODIGO_DANE": "15223"
+          }
+        ]
+      },
+      "CLINICA CHIA S.A.S. SEDE TUNJA": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "ARCABUCO",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "051",
+            "CODIGO_DANE": "15051"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "BOYACA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "104",
+            "CODIGO_DANE": "15104"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "CHIVATA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "187",
+            "CODIGO_DANE": "15187"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "COMBITA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "204",
+            "CODIGO_DANE": "15204"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "CUCAITA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "224",
+            "CODIGO_DANE": "15224"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "MOTAVITA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "476",
+            "CODIGO_DANE": "15476"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "NUEVO COLON",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "494",
+            "CODIGO_DANE": "15494"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "OICATA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "500",
+            "CODIGO_DANE": "15500"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "SIACHOQUE",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "740",
+            "CODIGO_DANE": "15740"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "SORA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "762",
+            "CODIGO_DANE": "15762"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "SORACA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "764",
+            "CODIGO_DANE": "15764"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "TIBANA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "804",
+            "CODIGO_DANE": "15804"
+          },
+          {
+            "NOMBRE_MUNICIPIO": "TUNJA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "001",
+            "CODIGO_DANE": "15001"
+          }
+        ]
+      },
+      "E.S.E CENTRO DE SALUD SAN PEDRO DE IGUAQUE": {
+        "MUNICIPIOS": [
+          {
+            "NOMBRE_MUNICIPIO": "CHIQUIZA",
+            "ID_DEPARTAMENTO": "15",
+            "ID_MUNICIPIO": "232",
+            "CODIGO_DANE": "15232"
+          }
+        ]
+      }
+    }
+  }
+}
