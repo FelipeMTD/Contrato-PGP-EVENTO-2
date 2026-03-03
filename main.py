@@ -90,8 +90,8 @@ async def iniciar_proyecto_privado():
             # Construir las rutas exactas
             excel_file = os.path.join(directorio_base, "datos_afiliados.xlsx")
             archivo_resultados = os.path.join(directorio_base, "Resultados_datos_afiliados.xlsx")
-            # ruta_json_boyaca = os.path.join(directorio_base, "json", "json_boyaca", "Contrato_Pgp_Boyaca.json")
-            ruta_json_tolima = os.path.join(directorio_base, "json", "json_tolima", "Contrato_Pgp_Tolima.json")
+            ruta_json_boyaca = os.path.join(directorio_base, "json", "json_boyaca", "Contrato_Pgp_Boyaca.json")
+            # ruta_json_tolima = os.path.join(directorio_base, "json", "json_tolima", "Contrato_Pgp_Tolima.json")
             # -------------------------------------
 
             if os.path.exists(excel_file):
@@ -100,10 +100,10 @@ async def iniciar_proyecto_privado():
                 await afiliacion.procesar_consultas_excel(excel_file)
                 
                 # --- EVENTO 6: Clasificación PGP / EVENTO ---
-                # print(f"Buscando archivo JSON en: {ruta_json_boyaca}") # <-- ESTO NOS DIRÁ SI LA RUTA ESTÁ BIEN
-                # clasificador = ClasificadorContratos(ruta_json_boyaca)
-                print(f"Buscando archivo JSON en: {ruta_json_tolima}") # <-- ESTO NOS DIRÁ SI LA RUTA ESTÁ BIEN
-                clasificador = ClasificadorContratos(ruta_json_tolima)
+                print(f"Buscando archivo JSON en: {ruta_json_boyaca}") # <-- ESTO NOS DIRÁ SI LA RUTA ESTÁ BIEN
+                clasificador = ClasificadorContratos(ruta_json_boyaca)
+                # print(f"Buscando archivo JSON en: {ruta_json_tolima}") # <-- ESTO NOS DIRÁ SI LA RUTA ESTÁ BIEN
+                # clasificador = ClasificadorContratos(ruta_json_tolima)
                 clasificador.procesar_excel(archivo_resultados)
                 # --------------------------------------------------
             else:

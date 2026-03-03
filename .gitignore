@@ -1,3 +1,6 @@
+TipoDeContrato_*/
+
+
 *.zip
 venv
 .env
@@ -6,4 +9,4 @@ tmp
 dist
 build
 *.spec
-TipoDe*/
+

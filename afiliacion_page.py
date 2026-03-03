@@ -22,119 +22,122 @@ class AfiliacionPage:
         await self.page.wait_for_timeout(tiempo_espera)        
 
     async def procesar_consultas_excel(self, ruta_excel: str):
-        print(f"Cargando archivo: {ruta_excel}...")
-        df = pd.read_excel(ruta_excel)
+            print(f"Cargando archivo: {ruta_excel}...")
+            df = pd.read_excel(ruta_excel)
 
-        # --- NUEVA VALIDACIÓN DE COLUMNAS ---
-        df.columns = df.columns.str.replace('_x000d_', '', regex=False).str.strip()
+            # --- 1. LIMPIEZA MASIVA DE CABECERAS ---
+            df.columns = df.columns.str.replace('_x000d_', '', regex=False).str.strip()
 
-        if 'Tipo' not in df.columns or 'Documento' not in df.columns:
-            print("\n[!] ERROR DE EXCEL: No se encontraron las columnas correctas.")
-            print(f"-> Columnas que el bot está viendo en tu archivo: {df.columns.tolist()}")
-            print("-> Solución: Abre tu Excel y asegúrate de que la Fila 1 tenga 'Tipo' y 'Documento'.")
-            return  
+            if 'Tipo' not in df.columns or 'Documento' not in df.columns:
+                print("\n[!] ERROR DE EXCEL: No se encontraron las columnas correctas.")
+                print(f"-> Columnas que el bot está viendo en tu archivo: {df.columns.tolist()}")
+                print("-> Solución: Abre tu Excel y asegúrate de que la Fila 1 tenga 'Tipo' y 'Documento'.")
+                return  
 
-        # 1. Crear las nuevas columnas y FORZARLAS a ser texto
-        columnas_extraer = [
-            'Nombre Usuario', 'Estado Afiliación Usuario', 'IPS Primaria',
-            'Tipo Contrato','Departamento','Municipio', 'Tipo Afiliado', 'Categoría Afiliado'
-        ]
-        for col in columnas_extraer:
-            if col not in df.columns:
-                df[col] = ""
-            df[col] = df[col].astype(object) 
+            # --- 2. LIMPIEZA MASIVA DE DATOS DE EXCEL (LA OPCIÓN ELEGIDA) ---
+            # Purificamos todas las filas de un solo golpe antes de iniciar el bot
+            df['Tipo'] = df['Tipo'].astype(str).str.replace('_x000d_', '', regex=False).str.strip()
+            df['Documento'] = df['Documento'].astype(str).str.replace('_x000d_', '', regex=False).str.replace('.0', '', regex=False).str.strip()
+            # -----------------------------------------------------------------
 
-        print(f"Se procesarán {len(df)} registros.")
+            # 3. Crear las nuevas columnas y FORZARLAS a ser texto
+            columnas_extraer = [
+                'Nombre Usuario', 'Estado Afiliación Usuario', 'IPS Primaria',
+                'Tipo Contrato','Departamento','Municipio', 'Tipo Afiliado', 'Categoría Afiliado'
+            ]
+            for col in columnas_extraer:
+                if col not in df.columns:
+                    df[col] = ""
+                df[col] = df[col].astype(object) 
 
-        # 2. Localizar el iFrame
-        await self.page.wait_for_selector(self.iframe_selector, state="visible", timeout=20000)
-        frame = self.page.frame_locator(self.iframe_selector)
+            print(f"Se procesarán {len(df)} registros.")
 
-        try:
-            print("Esperando a que el contenido del iFrame cargue...")
-            await frame.locator(self.select_tipo_doc).wait_for(state="visible", timeout=15000)
-        except Exception:
-            print("\n[!] ALERTA: No se encontró el campo Tipo de Documento.")
-            print("Por favor verifica si el selector (self.select_tipo_doc) es el correcto.")
-            return
-
-  
-
-        # 3. Iniciar el ÚNICO bucle de procesamiento
-        for index, row in df.iterrows():
-            # Limpiamos el texto basura _x000d_ de los datos directamente
-            tipo = str(row['Tipo']).replace('_x000d_', '').strip()
-            doc = str(row['Documento']).replace('_x000d_', '').replace('.0', '').strip()
-            
-            print(f"[{index + 1}/{len(df)}] Consultando: {tipo} - {doc} ... ", end="", flush=True)
+            # 4. Localizar el iFrame
+            await self.page.wait_for_selector(self.iframe_selector, state="visible", timeout=20000)
+            frame = self.page.frame_locator(self.iframe_selector)
 
             try:
-                await frame.locator(self.select_tipo_doc).select_option(label=tipo)
-                await self.pausa_humana(300, 700) 
+                print("Esperando a que el contenido del iFrame cargue...")
+                await frame.locator(self.select_tipo_doc).wait_for(state="visible", timeout=15000)
+            except Exception:
+                print("\n[!] ALERTA: No se encontró el campo Tipo de Documento.")
+                print("Por favor verifica si el selector (self.select_tipo_doc) es el correcto.")
+                return
+
+            # 5. Iniciar el ÚNICO bucle de procesamiento
+            for index, row in df.iterrows():
                 
-                # --- CAMBIO 1: LIMPIEZA PREVENTIVA ---
-                # Borramos cualquier número viejo que haya quedado de una consulta fallida anterior
-                await frame.locator(self.input_doc).clear()
+                # --- CÓDIGO LIMPIO GRACIAS A PANDAS ---
+                tipo = row['Tipo']
+                doc = row['Documento']
+                # --------------------------------------
                 
-                # Escribir el documento simulando tecleo humano
-                await frame.locator(self.input_doc).press_sequentially(doc, delay=random.randint(40, 90))
-                await self.pausa_humana(400, 900) 
-                
-                # Clic robusto en consultar
-                btn_locator = frame.locator(self.btn_consultar)
+                print(f"[{index + 1}/{len(df)}] Consultando: {tipo} - {doc} ... ", end="", flush=True)
+
                 try:
-                    await btn_locator.click(force=True, timeout=5000)
-                except Exception:
-                    await btn_locator.evaluate("el => el.click()")
-                
-                await self.page.wait_for_timeout(3000) 
-                
-                # --- CAMBIO 2: DETECCIÓN DE "CAMINO TRISTE" (EL PACIENTE NO EXISTE) ---
-                # Verificamos si la tabla realmente cargó buscando la etiqueta "Nombre Usuario"
-                validador_tabla = frame.locator("xpath=//label[contains(normalize-space(text()), 'Nombre Usuario')]")
-                
-                if await validador_tabla.count() == 0:
-                    # Si no hay tabla, buscamos si el portal arrojó un mensaje de error rojo/amarillo
-                    msg_error_locator = frame.locator("xpath=//ul[contains(@id, 'msg')]//li | //span[contains(@class, 'mensajes')]")
+                    await frame.locator(self.select_tipo_doc).select_option(label=tipo)
+                    await self.pausa_humana(300, 700) 
                     
-                    if await msg_error_locator.count() > 0:
-                        mensaje_error = await msg_error_locator.first.inner_text()
-                        print(f"❌ {mensaje_error}")
-                        df.at[index, 'Estado Afiliación Usuario'] = f"NO ENCONTRADO - {mensaje_error}"
-                    else:
-                        print("❌ No encontrado / No registra")
-                        df.at[index, 'Estado Afiliación Usuario'] = "NO ENCONTRADO"
+                    # Borramos cualquier número viejo que haya quedado de una consulta fallida anterior
+                    await frame.locator(self.input_doc).clear()
                     
-                    # Saltamos inmediatamente al siguiente paciente sin intentar extraer ni dar clic en "Retornar"
-                    continue
-                # ----------------------------------------------------------------------
+                    # Escribir el documento simulando tecleo humano
+                    await frame.locator(self.input_doc).press_sequentially(doc, delay=random.randint(40, 90))
+                    await self.pausa_humana(400, 900) 
+                    
+                    # Clic robusto en consultar
+                    btn_locator = frame.locator(self.btn_consultar)
+                    try:
+                        await btn_locator.click(force=True, timeout=5000)
+                    except Exception:
+                        await btn_locator.evaluate("el => el.click()")
+                    
+                    await self.page.wait_for_timeout(3000) 
+                    
+                    # DETECCIÓN DE "CAMINO TRISTE" (EL PACIENTE NO EXISTE)
+                    validador_tabla = frame.locator("xpath=//label[contains(normalize-space(text()), 'Nombre Usuario')]")
+                    
+                    if await validador_tabla.count() == 0:
+                        # Si no hay tabla, buscamos si el portal arrojó un mensaje de error rojo/amarillo
+                        msg_error_locator = frame.locator("xpath=//ul[contains(@id, 'msg')]//li | //span[contains(@class, 'mensajes')]")
+                        
+                        if await msg_error_locator.count() > 0:
+                            mensaje_error = await msg_error_locator.first.inner_text()
+                            print(f"❌ {mensaje_error}")
+                            df.at[index, 'Estado Afiliación Usuario'] = f"NO ENCONTRADO - {mensaje_error}"
+                        else:
+                            print("❌ No encontrado / No registra")
+                            df.at[index, 'Estado Afiliación Usuario'] = "NO ENCONTRADO"
+                        
+                        # Saltamos inmediatamente al siguiente paciente
+                        continue
 
-                # Si el código llega aquí, es porque el paciente SÍ existe (Camino Feliz)
-                df.at[index, 'Nombre Usuario'] = await self.extraer_dato_tabla(frame, "Nombre Usuario")
-                df.at[index, 'Estado Afiliación Usuario'] = await self.extraer_dato_tabla(frame, "Estado Afiliación Usuario")
-                df.at[index, 'Departamento'] = await self.extraer_dato_tabla(frame, "Departamento")
-                df.at[index, 'Municipio'] = await self.extraer_dato_tabla(frame, "Municipio")
-                df.at[index, 'Tipo Afiliado'] = await self.extraer_dato_tabla(frame, "Tipo Afiliado")
-                df.at[index, 'Categoría Afiliado'] = await self.extraer_dato_tabla(frame, "Categoría Afiliado")
-                df.at[index, 'IPS Primaria'] = await self.extraer_dato_tabla(frame, "IPS Primaria") 
-                
-                print("¡Extraído!")
-                await self.pausa_humana(1500, 3000)
+                    # Si el código llega aquí, es porque el paciente SÍ existe (Camino Feliz)
+                    df.at[index, 'Nombre Usuario'] = await self.extraer_dato_tabla(frame, "Nombre Usuario")
+                    df.at[index, 'Estado Afiliación Usuario'] = await self.extraer_dato_tabla(frame, "Estado Afiliación Usuario")
+                    df.at[index, 'Departamento'] = await self.extraer_dato_tabla(frame, "Departamento")
+                    df.at[index, 'Municipio'] = await self.extraer_dato_tabla(frame, "Municipio")
+                    df.at[index, 'Tipo Afiliado'] = await self.extraer_dato_tabla(frame, "Tipo Afiliado")
+                    df.at[index, 'Categoría Afiliado'] = await self.extraer_dato_tabla(frame, "Categoría Afiliado")
+                    df.at[index, 'IPS Primaria'] = (await self.extraer_dato_tabla(frame, "IPS Primaria")).strip() 
+                    
+                    print("¡Extraído!")
+                    await self.pausa_humana(1500, 3000)
 
-                # 6. Limpiar el formulario usando el botón "Retornar"
-                if await frame.locator(self.btn_retornar).count() > 0:
-                    await frame.locator(self.btn_retornar).click(delay=random.randint(50, 100))
-                    await self.page.wait_for_timeout(2000) 
+                    # Limpiar el formulario usando el botón "Retornar"
+                    if await frame.locator(self.btn_retornar).count() > 0:
+                        await frame.locator(self.btn_retornar).click(delay=random.randint(50, 100))
+                        await self.page.wait_for_timeout(2000) 
 
-            except Exception as e:
-                print(f"Error crítico en consulta: {str(e)}")
-                df.at[index, 'Estado Afiliación Usuario'] = "Error interno del bot"
+                except Exception as e:
+                    print(f"Error crítico en consulta: {str(e)}")
+                    df.at[index, 'Estado Afiliación Usuario'] = "Error interno del bot"
 
-        # 7. Guardar el nuevo Excel
-        nombre_archivo_salida = f"Resultados_{os.path.basename(ruta_excel)}"
-        df.to_excel(nombre_archivo_salida, index=False)
-        print(f"\n--- ✅ EXTRACCIÓN FINALIZADA ---")
-        print(f"Los datos han sido guardados exitosamente en: {nombre_archivo_salida}")
+            # Guardar el nuevo Excel
+            nombre_archivo_salida = f"Resultados_{os.path.basename(ruta_excel)}"
+            df.to_excel(nombre_archivo_salida, index=False)
+            print(f"\n--- ✅ EXTRACCIÓN FINALIZADA ---")
+            print(f"Los datos han sido guardados exitosamente en: {nombre_archivo_salida}")
 
     async def extraer_dato_tabla(self, frame, label_text: str) -> str:
         """
