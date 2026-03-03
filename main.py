@@ -88,6 +88,7 @@ async def iniciar_proyecto_privado():
                 # Definimos las rutas exactas
                 archivo_resultados = f"Resultados_{excel_file}"
                 ruta_json_boyaca = os.path.join("json", "json_boyaca", "Contrato_Pgp_Boyaca.json")
+                # ruta_json = os.path.join("json", "json_tolima", "Contrato_Pgp_Tolima.json")
                 
                 # Instanciamos y ejecutamos tu nuevo archivo
                 clasificador = ClasificadorContratos(ruta_json_boyaca)
