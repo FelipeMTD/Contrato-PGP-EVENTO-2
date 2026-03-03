@@ -36,8 +36,8 @@ class AfiliacionPage:
 
         # 1. Crear las nuevas columnas y FORZARLAS a ser texto
         columnas_extraer = [
-            'Nombre Usuario', 'Estado Afiliación Usuario', 'Departamento', 
-            'Municipio', 'Tipo Afiliado', 'Categoría Afiliado', 'IPS Primaria'
+            'Nombre Usuario', 'Estado Afiliación Usuario', 'IPS Primaria',
+            'Tipo Contrato','Departamento','Municipio', 'Tipo Afiliado', 'Categoría Afiliado'
         ]
         for col in columnas_extraer:
             if col not in df.columns:
@@ -59,10 +59,12 @@ class AfiliacionPage:
             return
 
   
+
         # 3. Iniciar el ÚNICO bucle de procesamiento
         for index, row in df.iterrows():
-            tipo = str(row['Tipo']).strip()
-            doc = str(row['Documento']).strip()
+            # Limpiamos el texto basura _x000d_ de los datos directamente
+            tipo = str(row['Tipo']).replace('_x000d_', '').strip()
+            doc = str(row['Documento']).replace('_x000d_', '').replace('.0', '').strip()
             
             print(f"[{index + 1}/{len(df)}] Consultando: {tipo} - {doc} ... ", end="", flush=True)
 

@@ -55,10 +55,9 @@ class ClasificadorContratos:
                 )
             
             # Guardamos el archivo sobrescribiendo el de Resultados (o creando uno nuevo)
-            nombre_salida = f"Final_{os.path.basename(ruta_excel)}"
-            df.to_excel(nombre_salida, index=False)
+            df.to_excel(ruta_excel, index=False)
             
-            print(f"✅ Clasificación exitosa. Archivo guardado como: {nombre_salida}")
+            print(f"✅ Clasificación exitosa. Archivo guardado como: {ruta_excel}")
             
         except Exception as e:
             print(f"[!] Error procesando el Excel: {e}")

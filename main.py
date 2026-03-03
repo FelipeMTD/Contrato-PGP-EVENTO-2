@@ -83,20 +83,6 @@ async def iniciar_proyecto_privado():
             if os.path.exists(excel_file):
                 print(f"Paso 6: Iniciando procesamiento de {excel_file}...")
                 await afiliacion.procesar_consultas_excel(excel_file)
-            else:
-                print(f"ADVERTENCIA: No se encontró el archivo '{excel_file}'.")
-
-            print("\n--- PROCESO FINALIZADO EXITOSAMENTE ---")
-
-        except Exception as e:
-            print(f"\n[!] ERROR CRÍTICO: {e}")
-            # Captura de pantalla de error en la carpeta temporal (se borrará al final)
-            await page.screenshot(path=f"{tmp_dir}/error_captura.png")
-            # EVENTO 5: Procesamiento de registros desde Excel
-            excel_file = "datos_afiliados.xlsx"
-            if os.path.exists(excel_file):
-                print(f"Paso 6: Iniciando procesamiento de {excel_file}...")
-                await afiliacion.procesar_consultas_excel(excel_file)
                 
                 # --- NUEVO EVENTO 6: Clasificación PGP / EVENTO ---
                 # Definimos las rutas exactas
@@ -107,11 +93,15 @@ async def iniciar_proyecto_privado():
                 clasificador = ClasificadorContratos(ruta_json_boyaca)
                 clasificador.procesar_excel(archivo_resultados)
                 # --------------------------------------------------
-                
             else:
                 print(f"ADVERTENCIA: No se encontró el archivo '{excel_file}'.")
 
             print("\n--- PROCESO FINALIZADO EXITOSAMENTE ---")
+
+        except Exception as e:
+            print(f"\n[!] ERROR CRÍTICO: {e}")
+            # Captura de pantalla de error en la carpeta temporal (se borrará al final)
+            await page.screenshot(path=f"{tmp_dir}/error_captura.png")
             
         finally:
             # 5. CIERRE SEGURO: Liberación de memoria y procesos
