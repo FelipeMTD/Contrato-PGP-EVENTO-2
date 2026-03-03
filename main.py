@@ -1,7 +1,7 @@
-import asyncio
-import shutil
 import os
 import sys
+import asyncio
+import shutil
 from playwright.async_api import async_playwright
 # from playwright_stealth import stealth# Importación de tus módulos locales
 from config import Config
@@ -26,6 +26,7 @@ async def iniciar_proyecto_privado():
         
         # 2. LANZAMIENTO: Configuración de navegador para anonimato
         browser = await p.chromium.launch(
+            channel="msedge",
             headless=Config.HEADLESS,
             slow_mo=Config.SLOW_MO,
             args=[
@@ -78,24 +79,35 @@ async def iniciar_proyecto_privado():
             target_url = "https://portal.nuevaeps.com.co/Portal/pages/ips/autorizaciones/consultarEstadoAfiliacion.jspx"
             await page.goto(target_url, wait_until="networkidle")
 
-            # EVENTO 5: Procesamiento de registros desde Excel
-            excel_file = "datos_afiliados.xlsx"
+            # --- ESTRATEGIA DE RUTAS ABSOLUTAS PARA EL .EXE ---
+            # --- ESTRATEGIA DE RUTAS PARA .EXE ---
+            # Detectar si estamos en el .exe o en el .py
+            if getattr(sys, 'frozen', False):
+                directorio_base = os.path.dirname(sys.executable) # Donde está el .exe
+            else:
+                directorio_base = os.path.dirname(os.path.abspath(__file__)) # Donde está el .py
+            
+            # Construir las rutas exactas
+            excel_file = os.path.join(directorio_base, "datos_afiliados.xlsx")
+            archivo_resultados = os.path.join(directorio_base, "Resultados_datos_afiliados.xlsx")
+            # ruta_json_boyaca = os.path.join(directorio_base, "json", "json_boyaca", "Contrato_Pgp_Boyaca.json")
+            ruta_json_tolima = os.path.join(directorio_base, "json", "json_tolima", "Contrato_Pgp_Tolima.json")
+            # -------------------------------------
+
             if os.path.exists(excel_file):
-                print(f"Paso 6: Iniciando procesamiento de {excel_file}...")
+                print(f"Paso 6: Iniciando procesamiento de datos_afiliados.xlsx...")
+                # Pasamos la ruta absoluta
                 await afiliacion.procesar_consultas_excel(excel_file)
                 
-                # --- NUEVO EVENTO 6: Clasificación PGP / EVENTO ---
-                # Definimos las rutas exactas
-                archivo_resultados = f"Resultados_{excel_file}"
-                ruta_json_boyaca = os.path.join("json", "json_boyaca", "Contrato_Pgp_Boyaca.json")
-                # ruta_json = os.path.join("json", "json_tolima", "Contrato_Pgp_Tolima.json")
-                
-                # Instanciamos y ejecutamos tu nuevo archivo
-                clasificador = ClasificadorContratos(ruta_json_boyaca)
+                # --- EVENTO 6: Clasificación PGP / EVENTO ---
+                # print(f"Buscando archivo JSON en: {ruta_json_boyaca}") # <-- ESTO NOS DIRÁ SI LA RUTA ESTÁ BIEN
+                # clasificador = ClasificadorContratos(ruta_json_boyaca)
+                print(f"Buscando archivo JSON en: {ruta_json_tolima}") # <-- ESTO NOS DIRÁ SI LA RUTA ESTÁ BIEN
+                clasificador = ClasificadorContratos(ruta_json_tolima)
                 clasificador.procesar_excel(archivo_resultados)
                 # --------------------------------------------------
             else:
-                print(f"ADVERTENCIA: No se encontró el archivo '{excel_file}'.")
+                print(f"ADVERTENCIA: No se encontró el archivo 'datos_afiliados.xlsx' en: {directorio_base}")
 
             print("\n--- PROCESO FINALIZADO EXITOSAMENTE ---")
 

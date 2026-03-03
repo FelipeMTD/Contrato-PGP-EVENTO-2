@@ -32,10 +32,10 @@ El sistema lee un archivo Excel con los documentos de los pacientes, navega por 
 
 ## ***Cambios internos en archivos***
 
-.**env** HEADLESS=TRUE para cerrar navegador 
+.**env** HEADLESS=TRUE para cerrar navegador
 
-**main.py**  
+**main.py**
 
-ruta_json = os.path.join("json", "json_boyaca", "Contrato_Pgp_Boyaca.json") 
+ ruta_json_boyaca = os.path.join(directorio_base, "json", "json_boyaca", "Contrato_Pgp_Boyaca.json")
 
-ruta_json = os.path.join("json", "json_tolima", "Contrato_Pgp_Tolima.json")
+  ruta_json_tolima = os.path.join(directorio_base, "json", "json_tolima", "Contrato_Pgp_Tolima.json")

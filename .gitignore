@@ -1,5 +1,9 @@
-
+*.zip
 venv
 .env
 __pycache__
 tmp
+dist
+build
+*.spec
+TipoDe*/
