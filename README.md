@@ -39,3 +39,5 @@ El sistema lee un archivo Excel con los documentos de los pacientes, navega por 
  ruta_json_boyaca = os.path.join(directorio_base, "json", "json_boyaca", "Contrato_Pgp_Boyaca.json")
 
   ruta_json_tolima = os.path.join(directorio_base, "json", "json_tolima", "Contrato_Pgp_Tolima.json")
+
+https://gemini.google.com/app/060334e5723a41d4?utm_source=app_launcher&utm_medium=owned&utm_campaign=base_all
